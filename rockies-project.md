@@ -1,7 +1,7 @@
 # 🏔️ Case Study: Fan 360 Revenue Engine (Colorado Rockies PoC)
 
 ## 🎯 Executive Summary
-> "I took the initiative to architect a technical **Proof of Concept (PoC)** demonstrating how the Rockies can unify disparate data silos—Ticketing, Concessions, and Retail—into a single **Fan 360 Intelligence Engine**. This project moves beyond reactive reporting to provide a proactive roadmap for **LTV Growth** and **Churn Mitigation**."
+> I took the initiative to architect a technical **Proof of Concept (PoC)** demonstrating how the Rockies can unify disparate data silos—Ticketing, Concessions, and Retail—into a single **Fan 360 Intelligence Engine**. This project moves beyond reactive reporting to provide a proactive roadmap for **LTV Growth** and **Churn Mitigation**.
 
 ---
 
