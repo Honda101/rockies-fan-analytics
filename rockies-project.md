@@ -54,4 +54,4 @@ For the data leadership team, the full source code, SQL models, and dbt configur
 ---
 
 ### Contact & Professional Profile
-**Dustin Meyer** *Senior Data Analyst | Principal Data Solutions Analyst* [Portfolio Home](https://honda101.github.io)
+**Dustin Meyer** *Senior Data Analyst | Principal Data Solutions Analyst* [Portfolio Home](https://honda101.github.io) | dustin.meyer101@gmail.com | (303) 519-2340
