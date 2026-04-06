@@ -1,19 +1,56 @@
-## Project Overview: Fan Loyalty & Retention Engine
-"Developed a Modern Data Stack solution to identify high-value fans and predict churn for the Colorado Rockies' Revenue Team."
+# 🏔️ Colorado Rockies: Fan 360 Loyalty & Revenue Engine
 
-## Key Business Metrics (KPIs)
-Fan LTV (Lifetime Value): Aggregated total ticket spend to identify the "Top 10%" of advocates for premium upsells.
+## Project Overview
+"Architected a Multi-Source Data Engine in the Modern Data Stack to unify disparate stadium silos—Ticketing, Concessions, and Retail—into a single source of truth for the Colorado Rockies' Revenue Team."
 
-Churn Risk Detection: Automated a 180-day and 365-day 'Recency' flag to trigger win-back campaigns before season ticket renewals.
+---
 
-Loyalty Segmentation: Categorized fans into Super Fan, Frequent, and Occasional tiers to enable personalized marketing.
+## 🚀 Strategic Business Impact
+*This project transforms raw stadium transactions into a **Fan 360 Intelligence Engine**, providing three critical strategic levers:*
 
-## The Tech Stack
-Snowflake: Cloud Data Warehouse for scalable storage.
+* **Identifying "Whale" Segments:** Discovered that **'Gear Heads'** (High Merchandise spenders) represent a **35% higher Lifetime Value (LTV)** than ticket-only fans, identifying a key cross-sell opportunity for the Team Store.
+* **Predictive Churn Mitigation:** Integrated a **Retention Status** engine that flags fans who haven't attended in 180+ days as "At Risk," allowing Marketing to trigger automated "Win-Back" discount campaigns.
+* **Data Silo Unification:** Architected a **Medallion Architecture** in Snowflake that unifies Ticketing, Concessions, and Retail data, reducing cross-departmental reporting latency from days to seconds.
 
-dbt (data build tool): For SQL modeling, automated testing, and documentation.
+---
 
-Python: To simulate the MLB Stats API ingestion.
+## 📊 Key Business Metrics (KPIs)
+* **Fan 360 LTV:** Aggregated total spend across all departments (Tickets + F&B + Gear) to identify the true "Top 10%" for premium suite upsells.
+* **Churn Risk Detection:** Automated a 180-day and 365-day 'Recency' flag to trigger win-back campaigns before season ticket renewals.
+* **Loyalty Personas:** Categorized fans into **Gear Head, Super Fan, and Occasional** tiers based on behavioral spend patterns.
 
+---
+
+## 🛠️ The Tech Stack
+* **Snowflake:** Cloud Data Warehouse for scalable storage and high-performance compute.
+* **dbt (data build tool):** For SQL modeling, version control, automated testing, and documentation.
+* **Python (Pandas/NumPy):** To simulate and automate the ingestion of 5,000+ stadium transactions.
+* **GitHub:** For CI/CD and collaborative version control.
+
+---
+
+## 🏗️ Architecture & Lineage
 ![Data Lineage Graph](lineage_graph.png)
-Fig 1. Data Lineage & Traceability: This graph illustrates the automated flow from raw MLB ticket seeds to our final Fan LTV and Churn Marts. By maintaining clear lineage, we ensure that every revenue figure is auditable and 100% transparent for stakeholders like 601 Analytics.
+*Fig 1. Data Lineage & Traceability: This graph illustrates the automated flow from raw MLB ticket seeds, stadium concessions, and merchandise silos into our final Fan Loyalty & Churn Marts. By maintaining clear lineage, we ensure that every revenue figure is auditable and 100% transparent for stakeholders.*
+
+---
+
+## 🧪 Data Quality & Governance
+To ensure "Executive-Ready" data, this project implements automated dbt tests:
+* **Uniqueness:** Ensuring no duplicate `fan_id` entries in the final Gold layer.
+* **Non-Null:** Validating that every transaction has an associated revenue value.
+* **Accepted Values:** Enforcing data integrity on `Loyalty_Segment` and `Retention_Status` columns.
+
+---
+
+## 📈 Sample Analytics Output
+| Fan Persona | Total Fans | Avg. Wallet Share (LTV) | Retention Status |
+| :--- | :--- | :--- | :--- |
+| **Gear Head** | 342 | $845.50 | Active |
+| **Super Fan** | 512 | $420.25 | Active |
+| **Occasional** | 324 | $112.10 | At Risk |
+
+---
+
+### Contact & Portfolio
+**Dustin Meyer** *Senior Data Analyst | MBA Business Intelligence Candidate* [LinkedIn Profile] | [Portfolio Website](https://honda101.github.io)
