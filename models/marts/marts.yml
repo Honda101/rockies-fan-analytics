@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: fan_loyalty
+    description: "Final mart categorizing Rockies fans by attendance and spend for the Revenue Team."
+    columns:
+      - name: fan_id
+        description: "Unique identifier for the fan."
+        tests:
+          - unique
+          - not_null
+      - name: loyalty_segment
+        description: "Segment based on games attended."
+        tests:
+          - accepted_values:
+              values: ['Super Fan', 'Frequent', 'Occasional']
+      - name: lifetime_spend
+        description: "Total dollar amount spent on tickets (LTV)."
+      - name: retention_status
+        description: "Classification of fan activity: Active, At Risk, or Churned."
+        tests:
+          - accepted_values:
+              values: ['Active', 'At Risk', 'Churned']
