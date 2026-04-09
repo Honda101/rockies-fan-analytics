@@ -9,11 +9,11 @@ models:
         tests:
           - unique
           - not_null
-      - name: loyalty_segment
-        description: "Segment based on games attended."
+      - name: fan_persona  # Changed from loyalty_segment
+        description: "The behavioral category of the fan"
         tests:
           - accepted_values:
-              values: ['Super Fan', 'Frequent', 'Occasional']
+              values: ['Gear Head', 'Heavy Consumer', 'Super Fan', 'Occasional'] # Added your new categories
       - name: lifetime_spend
         description: "Total dollar amount spent on tickets (LTV)."
       - name: retention_status
