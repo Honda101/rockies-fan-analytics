@@ -35,11 +35,19 @@
 
 ---
 
-## 🧪 Data Quality & Governance
+## 🧪 Experimental Design & A/B Testing
+To move from "Reporting" to "Optimization," I implemented a randomized control trial (RCT) framework directly in the dbt transformation layer.
+* **The Hypothesis:** Providing a 20% merchandise incentive to 'Occasional' fans would increase total stadium wallet share by 10%+.
+* **Technical Implementation:** Utilized SQL window functions (`first_value`) to calculate Average Revenue Per User (ARPU) and incremental lift between Control and Variant groups.
+* **The Result:** Validated a **12.8% revenue lift**, proving the ROI of cross-departmental marketing initiatives.
+
+---
+
+## 🛡️ Data Quality & Governance
 To ensure "Executive-Ready" data, this project implements automated dbt tests:
 * **Uniqueness:** Ensuring no duplicate `fan_id` entries in the final Gold layer.
 * **Non-Null:** Validating that every transaction has an associated revenue value.
-* **Accepted Values:** Enforcing data integrity on `Loyalty_Segment` and `Retention_Status` columns.
+* **Accepted Values:** Enforcing data integrity on `fan_persona` and `retention_status` columns to prevent data drift.
 
 ---
 
@@ -53,4 +61,9 @@ To ensure "Executive-Ready" data, this project implements automated dbt tests:
 ---
 
 ### Contact & Portfolio
-**Dustin Meyer** *Senior Data Analyst | MBA Business Intelligence Candidate* [LinkedIn Profile] | [Portfolio Website](https://honda101.github.io)
+**Dustin Meyer** *Senior Data Analyst | Principal Data Solutions Analyst* [LinkedIn Profile] | [Portfolio Website](https://honda101.github.io)
+
+---
+**Education**
+* **MBA in Business Intelligence**, Colorado State University (Expected 2027)
+* **B.S. in Business**, University of Northern Colorado (2016)ß
